@@ -1,0 +1,24 @@
+name: flutter_game
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies: 
+  fluttertoast: ^8.0.8
+  date_format: ^1.0.9
+  fbutton: ^2.0.1
+  cupertino_icons: ^1.0.2
+  get: 4.5.1
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  lints: 1.0.1
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
