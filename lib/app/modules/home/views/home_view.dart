@@ -42,13 +42,14 @@ class HomeView extends GetView<HomeController> {
       //     onTap: () {},
       //   ),
       // ])),
-      body: Center(
-          child: Container(
+      body: SingleChildScrollView(
+          child: Center(
+              child: Container(
         padding: EdgeInsets.only(top: 60),
         child: Column(
           children: lists,
         ),
-      )),
+      ))),
     );
   }
 }

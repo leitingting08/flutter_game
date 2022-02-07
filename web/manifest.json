@@ -1,6 +1,6 @@
 {
-    "name": "flutter_game",
-    "short_name": "flutter_game",
+    "name": "digital_road",
+    "short_name": "game",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
