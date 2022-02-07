@@ -4,8 +4,6 @@ import 'package:flutter_game/app/modules/home/bindings/home_binding.dart';
 import 'package:flutter_game/app/modules/home/views/home_view.dart';
 import 'package:flutter_game/app/modules/hy_road/bindings/hy_road_binding.dart';
 import 'package:flutter_game/app/modules/hy_road/views/hy_road_view.dart';
-import 'package:flutter_game/app/modules/score/bindings/score_binding.dart';
-import 'package:flutter_game/app/modules/score/views/score_view.dart';
 
 part 'app_routes.dart';
 
@@ -24,11 +22,6 @@ class AppPages {
       name: _Paths.HY_ROAD,
       page: () => HyRoadView(),
       binding: HyRoadBinding(),
-    ),
-    GetPage(
-      name: _Paths.SCORE,
-      page: () => ScoreView(),
-      binding: ScoreBinding(),
-    ),
+    )
   ];
 }

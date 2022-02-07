@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:core';
-import 'dart:io';
 import 'package:get/get.dart';
 import '../controllers/hy_road_controller.dart';
 import '../../../components/button.dart';
@@ -37,7 +36,6 @@ class HyRoadView extends GetView<HyRoadController> {
               )),
         ),
         Container(
-          height: Platform.isIOS ? 388 : 320,
           color: Colors.brown[200],
           padding: EdgeInsets.all(2),
           margin: EdgeInsets.all(20),
