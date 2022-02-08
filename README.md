@@ -14,3 +14,21 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## flutter web
+
+```bash
+flutter run --no-sound-null-safety # choose device
+# or 
+flutter run -d chrome --web-renderer html --no-sound-null-safety
+# or
+flutter run -d chrome --web-renderer canvaskit --no-sound-null-safety
+```
+
+## flutter build
+
+```bash
+flutter build web --web-renderer html  --no-sound-null-safety
+# or
+flutter build web --web-renderer canvaskit  --no-sound-null-safety
+```
