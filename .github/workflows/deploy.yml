@@ -15,9 +15,10 @@ jobs:
       with:
         flutter-version: '2.8.0'
         channel: 'stable'
+    - run: flutter clean
     - run: flutter config --enable-web
     - run: flutter pub get
-    - run: flutter build web --web-renderer html  --no-sound-null-safety
+    - run: flutter build web --web-renderer html
     
     - uses: JamesIves/github-pages-deploy-action@3.6.2
       with:

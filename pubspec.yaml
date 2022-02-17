@@ -7,8 +7,7 @@ environment:
 
 dependencies: 
   fluttertoast: ^8.0.8
-  date_format: ^1.0.9
-  fbutton: ^2.0.1
+  date_format: ^2.0.5
   cupertino_icons: ^1.0.2
   get: 4.5.1
   flutter: 

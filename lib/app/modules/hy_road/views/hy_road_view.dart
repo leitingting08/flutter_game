@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import '../controllers/hy_road_controller.dart';
 import '../../../components/button.dart';
 
-// 恭喜你通关啦!\n用时$time
 class HyRoadView extends GetView<HyRoadController> {
   final textStyle = TextStyle(
       fontSize: 24, color: Get.isDarkMode ? Colors.white54 : Colors.black54);
@@ -52,10 +51,9 @@ class HyRoadView extends GetView<HyRoadController> {
         ),
         Container(
             margin: EdgeInsets.only(top: 20, bottom: 40),
-            child: Obx(() => MyButton(
-                  text: controller.startText.value,
-                  onPressedDown: () => {controller.isReady(true)},
-                ))),
+            child: Obx(() => BaseButton(
+                text: controller.startText.value,
+                onPressed: () => {controller.isReady(true)})))
       ]))),
     );
   }

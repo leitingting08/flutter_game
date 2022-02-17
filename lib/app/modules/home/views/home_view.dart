@@ -7,15 +7,14 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     List<Widget> lists = [];
-    var list = new List.generate(9, (_) => _);
+    var list = List.generate(9, (_) => _);
     for (int item in list) {
       if (item > 2) {
         lists.add(Container(
-          margin: EdgeInsets.all(20),
-          child: MyButton(
-              text: "${item} X ${item}",
-              onPressedUp: () => {Get.toNamed("/hy-road?id=${item}")}),
-        ));
+            margin: EdgeInsets.all(20),
+            child: BaseButton(
+                text: "$item X $item",
+                onPressed: () => {Get.toNamed("/hy-road?id=$item")})));
       }
     }
     return Scaffold(
@@ -31,17 +30,6 @@ class HomeView extends GetView<HomeController> {
               icon: Icon(Icons.light_mode, color: Colors.white))
         ],
       ),
-      // drawer: Drawer(
-      //     child: ListView(padding: EdgeInsets.zero, children: [
-      //   const DrawerHeader(
-      //     decoration: BoxDecoration(),
-      //     child: Text('Drawer Header'),
-      //   ),
-      //   ListTile(
-      //     title: const Text('切换主题色'),
-      //     onTap: () {},
-      //   ),
-      // ])),
       body: SingleChildScrollView(
           child: Center(
               child: Container(
