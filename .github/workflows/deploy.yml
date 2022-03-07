@@ -18,7 +18,7 @@ jobs:
     - run: flutter clean
     - run: flutter config --enable-web
     - run: flutter pub get
-    - run: flutter build web --web-renderer html
+    - run: flutter build web
     
     - uses: JamesIves/github-pages-deploy-action@3.6.2
       with:
